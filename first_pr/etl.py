@@ -90,6 +90,11 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    all_files = ['/Users/songhyeonju/Desktop/SW_study/....'] -> filepath list of song/log data
+
+    using for loop, execute func -> process_song/log_file function
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
